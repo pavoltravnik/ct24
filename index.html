@@ -1,0 +1,74 @@
+<canvas id="myChart"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<script>
+  var ctx = document.getElementById("myChart").getContext("2d");
+  var config = {
+    type: "line",
+    data: {
+      labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      datasets: [
+        {
+          label: "2017",
+          backgroundColor: 'rgb(255,160,122)',
+          borderColor: 'rgb(255,160,122)',
+          data: [0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0],
+          fill: false,
+        },
+        {
+          label: "2018",
+          backgroundColor: 'rgb(240,128,128)',
+          borderColor: 'rgb(240,128,128)',
+          data: [0, 0, 0, 1, 4, 3, 6, 30, 12, 10, 8, 5],
+          fill: false,
+        },
+        {
+          label: "2019",
+          backgroundColor: 'rgb(220,20,60',
+          borderColor: 'rgb(220,20,60',
+          data: [5, 3, 10, 17, 12, 11, 25, 14, 7, 6, 4, 5],
+          fill: false,
+        },
+        {
+          label: "2020",
+          backgroundColor: 'rgb(139,0,0)',
+          borderColor: 'rgb(139,0,0)',
+          data: [6, 10, 3, 11, 18, 12],
+          fill: false,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      title: {
+        display: true,
+        text: "Sucho na ct24",
+      },
+      tooltips: {
+        mode: "index",
+        intersect: false,
+      },
+      hover: {
+        mode: "nearest",
+        intersect: true,
+      },
+      scales: {
+        x: {
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: "Month",
+          },
+        },
+        y: {
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: "Value",
+          },
+        },
+      },
+    },
+  };
+  var myChart = new Chart(ctx, config);
+</script>

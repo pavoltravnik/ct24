@@ -1,0 +1,29 @@
+{
+  "name": "ct24",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavoltravnik/ct24.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavoltravnik/ct24/issues"
+  },
+  "homepage": "https://github.com/pavoltravnik/ct24#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "jsdom": "^16.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/node": "^7.10.3",
+    "@babel/preset-env": "^7.10.3"
+  }
+}
